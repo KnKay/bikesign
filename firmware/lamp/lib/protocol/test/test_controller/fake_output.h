@@ -1,8 +1,10 @@
+#pragma once 
+
 #include "abstracts.h"
 #include "protocol.h"
 
 namespace fakes {
-    class fakeOutput: bikelamp::protocol::AbstractSink {
+    class fakeOutput: public bikelamp::protocol::AbstractSink {
         public:
             virtual void handle(bikelamp::protocol::Command command){
                 switch (command.order)
@@ -11,13 +13,13 @@ namespace fakes {
                     state = true;
                     break;
                 case bikelamp::protocol::Order::OFF:
-                    state = true;
+                    state = false;
                     break;          
                 default:
                     break;
                 }
             }
-        private:
-            bool state = false;
+    
+        bool state = false;
     };
 }
