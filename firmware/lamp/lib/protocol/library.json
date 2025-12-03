@@ -1,0 +1,14 @@
+{
+	"name": "BikeLampProtocol",
+	"version": "0.0.1",
+	"description": "A library for handling bike lamp information",
+	"keywords": "bike, night, winter",
+	"authors": [{
+		"maintainer": true,
+		"name": "Kay Richter",
+		"email": "kay.richter@gmail.com"
+	}],
+
+	"frameworks": "native",
+	"platforms": "*"
+}
