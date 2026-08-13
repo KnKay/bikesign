@@ -9,7 +9,7 @@ namespace ardulamp {
     int PULSE_PIN = 13;
     int PULSE_CONTER =     15624;
 
-    void set_pulse_pint(int pin){
+    void set_pulse_pin(int pin){
         PULSE_PIN = pin;
         pinMode(PULSE_PIN, OUTPUT);
     }

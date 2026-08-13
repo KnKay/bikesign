@@ -1,18 +1,18 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+#include <timer_blink.h>
+#include <discrete_blink.h>
+
+ardulamp::discrete_blink left = ardulamp::discrete_blink(2, bikelamp::protocol::Output::LEFT);
+ardulamp::discrete_blink right = ardulamp::discrete_blink(2, bikelamp::protocol::Output::RIGHT);
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  ardulamp::set_pulse_pin(13);
+  ardulamp::setup_timer();  
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
 }
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
-}

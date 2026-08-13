@@ -1,5 +1,5 @@
 {
-	"name": "BikeLampProtocol",
+	"name": "ArduBikeLampProtocol",
 	"version": "0.0.1",
 	"description": "A library for handling bike lamp information",
 	"keywords": "bike, night, winter",
@@ -9,6 +9,6 @@
 		"email": "kay.richter@gmail.com"
 	}],
 
-	"frameworks": "*",
-	"platforms": "*"
+	"frameworks": "arduino",
+	"platforms": "atmelavr"
 }
