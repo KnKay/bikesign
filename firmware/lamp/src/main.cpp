@@ -20,6 +20,7 @@ void loop() {
     bikelamp::protocol::Command command;
     command = left_in.poll();
     left.handle(command);
+    command = right_in.poll();
+    right.handle(command);
     delay(1000);
 }
-
