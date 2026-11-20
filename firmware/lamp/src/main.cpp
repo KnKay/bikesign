@@ -14,5 +14,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+    bikelamp::protocol::Command command;
+    command.order = bikelamp::protocol::Order::ON;
+    command.output = bikelamp::protocol::Output::LEFT;
+    left.handle(command);
+    delay(1000);
+    command.order = bikelamp::protocol::Order::OFF;
+    left.handle(command);
+    delay(1000);
 }
 
