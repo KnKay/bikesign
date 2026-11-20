@@ -9,6 +9,6 @@
 		"email": "kay.richter@gmail.com"
 	}],
 
-	"frameworks": "native",
+	"frameworks": "*",
 	"platforms": "*"
 }
